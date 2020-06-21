@@ -16,7 +16,7 @@ class DQNNet(nn.Module):
 
 class DQNDuelingNet(nn.Module):
     def __init__(self, n_actions, n_features):
-        super(DQNNet, self).__init__()
+        super(DQNDuelingNet, self).__init__()
         self.value_layer = nn.Linear(n_features, n_actions)
         self.advantage_layer = nn.Linear(n_features, n_actions)
 
