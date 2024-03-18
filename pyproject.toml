@@ -1,0 +1,65 @@
+[project]
+name = "rl-tutorial"
+dynamic = ["version"]
+description = "rl tutorial"
+authors = [
+    {name = "Zhan Rongrui", email = "2742392377@qq.com"},
+]
+dependencies = [
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+
+[project.urls]
+Homepage = "https://github.com/zrr1999/Reinforcement-learning-with-PyTorch"
+Repository = "https://github.com/zrr1999/Reinforcement-learning-with-PyTorch"
+
+[tool.pdm.version]
+source = "scm"
+write_to = "rl/__version__.py"
+write_template = "__version__ = '{}'"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest",
+    "pytest-mock",
+    "coverage",
+]
+
+[tool.pdm.build]
+includes = ["rl"]
+
+[tool.ruff]
+line-length = 120
+src = ["rl", "tests"]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+  "F",
+  "SIM",
+  "UP",
+  "FA",  
+  "I",   
+  "B",   
+  "C4",  
+  "PGH", 
+  "RUF", 
+  "E",   
+  "W",   
+  "YTT", 
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["rl"]
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401", "I002"]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
