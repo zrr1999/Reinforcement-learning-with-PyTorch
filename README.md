@@ -5,32 +5,9 @@
 本项目基于莫烦强化学习教程编写。
 
 
-## 安装[![Downloads]()]()
-
-这个项目使用 [Python](https://www.python.org/downloads/) 开发，请确保你本地安装了它。
-
-建议使用pip安装本库。
-
-```sh
-$ pip install bone-pytex
-```
-
-## 使用说明
-
-
-
-
-## 计划实现算法
-
-
-## 更新日志
-- () v 更新
-    - 。
-
-
 ## 维护者
 
-[@詹荣瑞](https://github.com/zrr1999)
+@zrr1999
 
 ## 如何贡献
 
